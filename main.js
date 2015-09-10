@@ -48,7 +48,7 @@ $scope.mouseenter = function(){
 
 }
 
-$scope.mouseleave = function(){
+$scope.mouseleave = function(event){
 
 
 	$scope.hovering = false;
