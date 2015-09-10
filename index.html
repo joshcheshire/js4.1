@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html ng-app = "myApp" lang "en">
+
+<head>
+<meta charset = "utf8">
+
+<title>JS4-1</title>
+<link rel = "stylesheet" type="text/css" href="main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js">
+	</script>
+
+
+</head>
+
+<body>
+
+	<div ng-controller = "mainController">
+
+
+
+       	 <h1 class = "part-1"> {{title}} </h1>
+	
+		<button class = "button-1" ng-click = "buttonClick()">Click Me</button>
+
+			<h1 ng-show= "myHeader"> Header!</h1><br>
+			<p ng-show= "myText"> 	Text in the body element</p>
+		
+		
+
+	</div>
+
+	<script src="main.js"> </script>
+
+
+	</body>
+
+	</html>
