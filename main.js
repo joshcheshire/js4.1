@@ -40,7 +40,18 @@
 
 angular.module('myApp', [])
 
+
+
+
+
+
 var mainControllerFunc = function($scope){
+$scope.header = " Bacon Meats"
+$scope.header2 = " Full Measures"
+$scope.gotobacon = true
+$scope.gotoblue= true
+var exclaim = 0
+
 
 $scope.mouseenter = function(){
 
@@ -54,6 +65,45 @@ $scope.mouseleave = function(event){
 	$scope.hovering = false;
 	console.log(event)
 }
+
+
+
+
+$scope.headerClick = function(){
+
+	exclaim++
+	if( exclaim <5){
+
+		$scope.header += '!!!'
+		$scope.header2 += '!!!'
+	}
+
+}
+
+$scope.Really = function(event){
+
+	if( !confirm('seriously?')){
+		$scope.gotobacon = false
+		event.preventDefault()
+	}
+
+
+
+
+}
+
+$scope.bluemeth = function(event){
+
+
+	if(!confirm('really?!?')){
+		$scope.gotoblue= false
+		event.preventDefault()
+	}
+
+
+
+}
+
 
 
 
