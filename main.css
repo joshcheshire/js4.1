@@ -1,4 +1,37 @@
-.pink {
+.bigButton{
 
-	color: pink;
+	margin-left:40vw;
+	color: peachpuff;
+	width: 30vw;
+	background-color:aqua;
+	height: 300px;
+	font-size: x-large	
+}
+
+.popup {
+    /*transition: all 2s;*/
+    position: fixed;
+    height: 50px;
+    background-color: aquamarine;
+    top: 50vh;
+    left: 50vw;
+    font-color: white;
+}
+/*.popup-background {
+    position: fixed;
+   /* background-color: gray;*/
+    /*top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 2s;*/
+/*}*/
+.faded {
+    visibility: hidden;
+    opacity: 0;
+    /*transition: visibility 0s linear 2s, opacity 2s;*/
+}
+
+.none {
+    display: none;
 }

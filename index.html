@@ -52,7 +52,7 @@
  -->
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html ng-app = "myApp" lang "en">
 <head>
 <meta charset = "utf 8">
@@ -87,10 +87,47 @@
 	</body>
 
 	</html>
+------------------------------------------------ -->
+
+
+
+<!DOCTYPE html>
+<html ng-app = "myApp" lang "en">
+<head>
+<meta charset = "utf 8">
+<title> JS4-1-part-2</title>
+
+<link rel = "stylesheet" type="text/css" href="main.css">
+<script src="angular.min.js"> </script>  
+	
+
+</head>
+
+<body>
+
+	<div ng-controller = "mainController">
+
+
+		<button class="bigButton" ng-click = "showPopup()"> <strong>CLICK ME</strong> </button>
+		 
+
+   			<div ng-click="clickPopup()" ng-class="{faded : !popup}" class="popup"><strong> TEXT!!!!!</strong>
+        
+        		<button ng-click="dismissPopup()">KILL</button>
+        
+        </div>
 
 
 
 
+
+
+
+	</div>
+<script src = "main.js"> </script>
+</body>
+
+</html>
 
 
 

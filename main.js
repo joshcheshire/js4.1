@@ -38,67 +38,107 @@
 
 // P A R T  2 //
 
-angular.module('myApp', [])
+// angular.module('myApp', [])
 
 
 
+
+
+
+// var mainControllerFunc = function($scope){
+// $scope.header = " Bacon Meats"
+// $scope.header2 = " Full Measures"
+// $scope.gotobacon = true
+// $scope.gotoblue= true
+// var exclaim = 0
+
+
+// $scope.mouseenter = function(){
+
+// 	$scope.hovering = true;
+
+// }
+
+// $scope.mouseleave = function(event){
+
+
+// 	$scope.hovering = false;
+// 	console.log(event)
+// }
+
+
+
+
+// $scope.headerClick = function(){
+
+// 	exclaim++
+// 	if( exclaim <5){
+
+// 		$scope.header += '!!!'
+// 		$scope.header2 += '!!!'
+// 	}
+
+// }
+
+// $scope.Really = function(event){
+
+// 	if( !confirm('seriously?')){
+// 		$scope.gotobacon = false
+// 		event.preventDefault()
+// 	}
+
+// }
+
+// $scope.bluemeth = function(event){
+
+
+// 	if(!confirm('really?!?')){
+// 		$scope.gotoblue= false
+// 		event.preventDefault()
+		
+// 		}
+
+
+
+// 	}
+
+// }
+
+// angular.module('myApp')
+// .controller('mainController' , ['$scope', mainControllerFunc])
+
+// ----------------------------------------------------------
+
+
+
+//  P A R T  3 //
+
+angular.module ('myApp', [])
 
 
 
 var mainControllerFunc = function($scope){
-$scope.header = " Bacon Meats"
-$scope.header2 = " Full Measures"
-$scope.gotobacon = true
-$scope.gotoblue= true
-var exclaim = 0
+$scope.popup = false
 
 
-$scope.mouseenter = function(){
-
-	$scope.hovering = true;
-
-}
-
-$scope.mouseleave = function(event){
 
 
-	$scope.hovering = false;
-	console.log(event)
+
+
+$scope.showPopup = function(){
+
+	$scope.popup = true
 }
 
 
 
 
-$scope.headerClick = function(){
-
-	exclaim++
-	if( exclaim <5){
-
-		$scope.header += '!!!'
-		$scope.header2 += '!!!'
-	}
-
-}
-
-$scope.Really = function(event){
-
-	if( !confirm('seriously?')){
-		$scope.gotobacon = false
-		event.preventDefault()
-	}
+$scope.dismissPopup = function(){
+        $scope.popup = false
+    }
 
 
 
-
-}
-
-$scope.bluemeth = function(event){
-
-
-	if(!confirm('really?!?')){
-		$scope.gotoblue= false
-		event.preventDefault()
-	}
 
 
 
@@ -106,8 +146,27 @@ $scope.bluemeth = function(event){
 
 
 
+angular.module('myApp').controller('mainController' , [ '$scope', mainControllerFunc])
 
-}
 
-angular.module('myApp')
-.controller('mainController' , ['$scope', mainControllerFunc])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
